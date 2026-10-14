@@ -1,0 +1,42 @@
+"RimWorld" is a trademark of Ludeon Studios. This project is an independent,
+fan-made modification and is in no way associated with nor endorsed by Ludeon
+Studios.
+
+Other trademarks and registered trademarks are the property of the respective
+trademark holders.
+
+
+THIRD-PARTY COMPONENTS
+
+RIMWORLD
+
+The turret textures in Textures/Things/Building/Security/40mmBofors are
+modified versions of RimWorld's own turret textures by Ludeon Studios.
+
+The turret and gun defs in 1.6/Defs build on RimWorld's uranium slug turret,
+and reuse parts of its defs and descriptions.
+
+These textures and the parts taken from RimWorld are not covered by this
+project's license and remain the work of Ludeon Studios.
+
+COMBAT EXTENDED
+
+Mods/Combat Extended/Defs/ThingDefs/Weapons_40mmBofors_CE.xml is adapted from
+the uranium slug turret gun (Gun_TurretSniper) in Combat Extended by the CE
+Team: https://github.com/CombatExtended-Continued/CombatExtended
+
+Combat Extended is licensed under Creative Commons Attribution-NonCommercial-
+ShareAlike 4.0 International (CC BY-NC-SA 4.0):
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+That file is shared under CC BY-NC-SA 4.0, not this project's license.
+
+PATCHED MODS
+
+The patches under Mods/ only apply when Combat Extended or Better Architect
+Menu is installed. Neither mod is bundled with or redistributed by this
+project. Players install them separately.
+
+
+© 2026 ASPCT
+Licensed under the GNU General Public License v3.0 or later. See LICENSE.

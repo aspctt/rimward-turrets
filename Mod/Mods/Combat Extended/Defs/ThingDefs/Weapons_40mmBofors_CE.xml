@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================== 40mm Bofors Gun ================== -->
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>Gun_Turret40mmBofors_CE</defName>
+		<label>40mm bofors</label>
+		<description>A self-loading heavy autocannon designed to attach to a turret.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<graphicData>
+			<texPath>Things/Building/Security/40mmBofors/Turret40mmBofors_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<statBases>
+			<SightsEfficiency>2.36</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.21</SwayFactor> <!-- 1.89 -->
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown> <!-- 0.5 -->
+			<Mass>50</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>3.35</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_40x311mmR_AP</defaultProjectile>
+				<warmupTime>0.2</warmupTime> <!-- 4.6 -->
+				<minRange>5</minRange>
+				<range>82</range>
+				<ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>Shot_TurretSniper</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>40</magazineSize>
+				<reloadTime>6.8</reloadTime>
+				<ammoSet>AmmoSet_40x311mmR</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+				<noSnapshot>true</noSnapshot>
+				<noSingleShot>true</noSingleShot>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

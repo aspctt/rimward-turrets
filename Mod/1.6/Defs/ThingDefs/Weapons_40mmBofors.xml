@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================== 40mm Bofors Gun ================== -->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>Gun_Turret40mmBofors</defName>
+		<label>40mm bofors</label>
+		<description>A self-loading heavy autocannon designed to attach to a turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/40mmBofors/Turret40mmBofors_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.63</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>1.5</AccuracyLong>
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>50</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>Bullet_TurretSniper</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<minRange>5.9</minRange>
+				<range>45.9</range>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>Shot_TurretSniper</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================== 40mm Bofors Turret ================== -->
+	<ResearchProjectDef>
+		<defName>aspctt_40mmBoforsTurret</defName>
+		<label>bofors turret</label>
+		<description>Produce the armor-penetrating bofors turret. It fires the same projectiles as the uranium slug turret, but in full-auto.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>SniperTurret</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>PrecisionRifling</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>3.60</researchViewY>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+	</ResearchProjectDef>
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]</xpath>
+		<value>
+			<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]</xpath>
+		<value>
+			<fillPercent>0.85</fillPercent>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]/statBases</xpath>
+		<value>
+			<AimingAccuracy>0.8</AimingAccuracy>
+			<NightVisionEfficiency>0.65</NightVisionEfficiency>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]/comps/li[@Class="CompProperties_Power"]</xpath>
+		<value>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>650</basePowerConsumption>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Turret_40mmBofors"]/building/turretGunDef</xpath>
+		<value>
+			<turretGunDef>Gun_Turret40mmBofors_CE</turretGunDef>
+		</value>
+	</Operation>
+</Patch>

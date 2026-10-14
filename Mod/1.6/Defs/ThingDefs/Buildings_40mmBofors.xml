@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================== 40mm Bofors Turret ================== -->
+	<ThingDef ParentName="AutocannonTurret">
+		<defName>Turret_40mmBofors</defName>
+		<label>40mm bofors turret</label>
+		<description>An armor-piercing fully automatic turret. It's shells can punch through heavy armor, but runs through them rather quickly. It's more accurate at longer ranges, and can't fire at all close up. May explode when damaged.</description>
+		<uiIconPath>Things/Building/Security/40mmBofors/Turret40mmBofors_MenuIcon</uiIconPath>
+		<statBases>
+			<ShootingAccuracyTurret>1.5</ShootingAccuracyTurret>
+		</statBases>
+		<costList>
+			<Steel>500</Steel>
+			<Uranium>40</Uranium>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>5.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Uranium slugs</fuelGizmoLabel>
+				<outOfFuelMessage>No slugs</outOfFuelMessage>
+				<fuelFilter><thingDefs><li>Uranium</li></thingDefs></fuelFilter>
+				<fuelCapacity>40</fuelCapacity>
+				<fuelMultiplier>1.0</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<building>
+			<turretGunDef>Gun_Turret40mmBofors</turretGunDef> <!-- Gun_Turret40mmBofors -->
+			<turretBurstCooldownTime>0.2</turretBurstCooldownTime>
+		</building>
+		<researchPrerequisites>
+			<li>aspctt_40mmBoforsTurret</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

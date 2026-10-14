@@ -1,0 +1,46 @@
+###############################################################################
+# Rimward Turrets - .gitignore for a RimWorld XML mod
+###############################################################################
+
+## Release archives
+# Built by zipping the Mod folder for a release. Regenerated on demand, so there
+# is no reason to carry them in history where they would bloat every clone.
+*.zip
+*.7z
+*.rar
+Release/
+Releases/
+build/
+
+## Game logs and runtime output, wherever they land
+Player.log
+Player-prev.log
+*.log
+
+## IDE / editor cruft
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.sublime-workspace
+*.bak
+*.old
+*~
+
+## OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+###############################################################################
+# Local-only working material. NOT for publication.
+#
+# The Workshop description, Photoshop sources and other mods' files, kept next
+# to the repository to write patches against. Other people's work under other
+# people's terms; this mod ships none of it.
+#
+# Remove an entry only if you deliberately intend to publish it.
+###############################################################################
+external-files/

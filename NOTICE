@@ -13,8 +13,8 @@ RIMWORLD
 The turret textures in Textures/Things/Building/Security/40mmBofors are
 modified versions of RimWorld's own turret textures by Ludeon Studios.
 
-The turret and gun defs in 1.6/Defs build on RimWorld's uranium slug turret,
-and reuse parts of its defs and descriptions.
+The turret and gun defs in 1.6-1.7/Defs build on RimWorld's uranium slug
+turret, and reuse parts of its defs and descriptions.
 
 These textures and the parts taken from RimWorld are not covered by this
 project's license and remain the work of Ludeon Studios.

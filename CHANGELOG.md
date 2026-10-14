@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-10-14
+
+### Added
+
+- RimWorld 1.7 support
+
+### Changed
+
+- Renamed to Rimward Turrets, ready for more turrets
+- New preview image with the new name
+
 ## [1.5.1] - 2026-10-14
 
 ### Changed
@@ -47,7 +58,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release.
 
-[Unreleased]: https://github.com/aspctt/rimward-turrets/compare/1.5.1...HEAD
+[Unreleased]: https://github.com/aspctt/rimward-turrets/compare/1.6.0...HEAD
+[1.6.0]: https://github.com/aspctt/rimward-turrets/compare/1.5.1...1.6.0
 [1.5.1]: https://github.com/aspctt/rimward-turrets/releases/tag/1.5.1
 [1.5.0]: https://steamcommunity.com/sharedfiles/filedetails/changelog/3650133609
 [1.4.0]: https://steamcommunity.com/sharedfiles/filedetails/changelog/3650133609
